@@ -24,12 +24,12 @@ function App() {
   return (
     <div data-theme={theme} className="App">
       <Routes>
-        {/* //?Protected Routes */}
+        {/*Protected Routes */}
         <Route element={<Layout />}>
           <Route path="/" element={<Home />} />
           <Route path="/profile/:id" element={<Profile />} />
         </Route>
-         {/* //?Unprotected Routes */}
+         {/*Unprotected Routes */}
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
         <Route path="/reset-password" element={<ResetPassword />} />
